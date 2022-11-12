@@ -13,7 +13,7 @@ const Author = () => {
                 </div>
                 <div className=" flex my-10 bg-slate-200 p-6 rounded-md font-extrabold">
                     <h4 className='text-lg text-center'>6.1 <span className='font-extralight text-sm'>Height</span></h4>
-                    <h4 className='text-lg text-center'>75kg <span className='font-extralight text-sm'>Weight</span></h4>
+                    <h4 className='text-lg text-center mx-4'>75kg <span className='font-extralight text-sm '>Weight</span></h4>
                     <h4 className='text-lg text-center'>23yrs <span className='font-extralight text-sm'>Age</span></h4>
                 </div>
             </div>
