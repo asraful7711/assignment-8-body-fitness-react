@@ -17,11 +17,11 @@ const Activities = () => {
     const addTime = (activity) => {
         const newRecord = [...record, activity];
         setRecord(newRecord);
-        console.log(newRecord)
+        // console.log(newRecord)
     }
     return (
-        <div className='lg:grid grid-cols-4 bg-slate-100'>
-            <div className="activity-container col-span-3 ml-11">
+        <div className='lg:grid flex flex-col-reverse  grid-cols-4 bg-slate-100 order-last '>
+            <div className="activity-container col-span-3 lg:ml-11">
                 <h1 className='font-bold text-4xl mt-7 text-orange-300'><FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon> Pro Body Fitness </h1>
                 <h2 className='font-bold text-2xl my-6 text-slate-500'>Age Select today's exercise</h2>
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
@@ -30,7 +30,7 @@ const Activities = () => {
                     }
                 </div>
             </div>
-            <div className="record-container ml-16 bg-white">
+            <div className="record-container lg:ml-16 bg-white ">
                 <Records record={record} ></Records>
 
             </div>
