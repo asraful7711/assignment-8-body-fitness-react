@@ -3,7 +3,7 @@ import React from 'react';
 const Activity = ({ activity }) => {
     console.log(activity)
     return (
-        <div className='relative bg-white h-[550px] rounded-md'>
+        <div className='relative bg-white h-[550px] rounded-md p-3'>
 
             <img className='rounded-md  w-11/12 mx-auto mt-4' src={activity.img} alt="" />
             <div>
