@@ -19,7 +19,7 @@ const Records = ({ record }) => {
     const notify = () => toast.success("Activity Completed")
 
     return (
-        <div className='bg-white px-7 sticky top-0'>
+        <div className='bg-white px-7 sticky top-0 pb-10'>
             <Author></Author>
             <div className="flex justify-between mt-4 bg-slate-100 py-3 px-2 rounded-lg">
                 <button onClick={() => addBreak(10)} className=' btn btn-circle text-lg bg-blue-300 border-none'>10s</button>
