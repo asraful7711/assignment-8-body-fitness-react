@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Records = ({ record }) => {
     const setSecond = localStorage.getItem('break-time');
-    const [rest, setRest] = useState(setSecond);
+    const [rest, setRest] = useState([setSecond]);
     let totalTime = 0;
     for (const detail of record) {
         totalTime = totalTime + detail.time

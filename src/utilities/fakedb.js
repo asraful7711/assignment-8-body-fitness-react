@@ -1,5 +1,6 @@
-const addToDb = id => {
-    localStorage.setItem('break-time', id);
+const addToDb = (id = 0) => {
+
+    localStorage.setItem('break-time', id = 0);
 }
 
 export { addToDb }
