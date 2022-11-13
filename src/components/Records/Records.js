@@ -23,10 +23,10 @@ const Records = ({ record }) => {
             <div className="my-6 text-lg font-bold">
                 <p className='mb-3'>Exercise Details</p>
                 <p className='py-3 px-2 flex justify-between bg-slate-200 mb-4 rounded-md'>
-                    <span>Exercise time:</span> <span className='text-gray-400'> {totalTime} sec</span>
+                    <span>Exercise time:</span> <span className='text-gray-400'> {totalTime} seconds</span>
                 </p>
                 <p className='py-3 px-2 flex justify-between bg-slate-200 rounded-md'>
-                    <span>Break time:</span> <span className='text-gray-400'>{rest}sec</span>
+                    <span>Break time:</span> <span className='text-gray-400'>{rest} seconds</span>
                 </p>
             </div>
             <button className='btn btn-info text-white font-semibold w-full '>
