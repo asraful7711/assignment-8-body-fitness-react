@@ -1,22 +1,14 @@
 import React, { useState } from 'react';
 import Author from '../Author/Author';
 const Records = ({ record }) => {
-    const [rest, setRest] = useState([]);
+    const [rest, setRest] = useState(0);
     let totalTime = 0;
     for (const detail of record) {
         totalTime = totalTime + detail.time
     }
-    let totalBreak = 0;
     const addBreak = (pause) => {
-        // console.log(pause);
-        const newBreak = [...rest, pause]
-        setRest(newBreak)
+        setRest(pause)
 
-    }
-    for (const time of rest) {
-        console.log(time)
-        totalBreak = totalBreak + time
-        console.log(totalBreak)
     }
 
     return (
@@ -34,9 +26,12 @@ const Records = ({ record }) => {
                     <span>Exercise time:</span> <span className='text-gray-400'> {totalTime} sec</span>
                 </p>
                 <p className='py-3 px-2 flex justify-between bg-slate-200 rounded-md'>
-                    <span>Exercise time:</span> <span className='text-gray-400'>{totalBreak}sec</span>
+                    <span>Break time:</span> <span className='text-gray-400'>{rest}sec</span>
                 </p>
             </div>
+            <button className='btn btn-info text-white font-semibold w-full '>
+                Activity Completed
+            </button>
         </div>
     );
 };

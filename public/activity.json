@@ -1,7 +1,7 @@
 [
     {
         "id": "636f80f1ed3e1d0db28b6e2f",
-        "name": "planks",
+        "name": "Planks",
         "info": "Exercise controls weight. Exercise can help prevent excess weight gain or help maintain weight loss.",
         "age": "20-22",
         "img": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -9,7 +9,7 @@
     },
     {
         "id": "636f80f142ed84e3c4448f1c",
-        "name": "push up",
+        "name": "Push up",
         "info": "Exercise controls weight. Exercise can help prevent excess weight gain or help maintain weight loss.",
         "age": "20-22",
         "img": "https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -25,7 +25,7 @@
     },
     {
         "id": "636f80f19160ccd493b9ba3b",
-        "name": "leg-lifts",
+        "name": "Leg-lifts",
         "info": "Exercise controls weight. Exercise can help prevent excess weight gain or help maintain weight loss.",
         "age": "20-22",
         "img": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600",
