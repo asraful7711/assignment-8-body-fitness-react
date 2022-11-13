@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons'
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 import Records from '../Records/Records';
 const Activities = () => {
 

@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import Author from '../Author/Author';
+import { addToDb } from '../../utilities/fakedb';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Records = ({ record }) => {
-    const [rest, setRest] = useState(0);
+    const setSecond = localStorage.getItem('break-time');
+    const [rest, setRest] = useState(setSecond);
     let totalTime = 0;
     for (const detail of record) {
         totalTime = totalTime + detail.time
     }
+
     const addBreak = (pause) => {
-        setRest(pause)
+        setRest(pause);
+        addToDb(pause);
 
     }
+    const notify = () => toast.success("Activity Completed")
 
     return (
         <div className='bg-white px-7 sticky top-0'>
@@ -29,8 +36,9 @@ const Records = ({ record }) => {
                     <span>Break time:</span> <span className='text-gray-400'>{rest} seconds</span>
                 </p>
             </div>
-            <button className='btn btn-info text-white font-semibold w-full '>
+            <button onClick={notify} className='btn btn-info text-white font-semibold w-full '>
                 Activity Completed
+                <ToastContainer></ToastContainer>
             </button>
         </div>
     );
